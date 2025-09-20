@@ -278,7 +278,7 @@ export default function ServicesPage() {
                     </div>
 
                     <div className="flex flex-col space-y-2">
-                      <Link href={`/tour/plan${plan.id}`}>
+                      <Link href={`/Servicios/Plan${plan.id}`}>
                         <button className="w-full bg-[var(--blue-primary)] hover:bg-[var(--blue-light)] text-[var(--neutral-white)] py-2 px-4 rounded-full transition-colors text-sm font-medium">
                           Ver detalles del tour
                         </button>

@@ -160,7 +160,7 @@ export default function AboutPage() {
                 <div className="md:w-2/5 p-6 md:p-8 bg-[var(--blue-primary)] flex items-center justify-center">
                   <div className="w-48 h-48 md:w-64 md:h-64 bg-[var(--neutral-white)] rounded-full overflow-hidden border-4 border-[var(--neutral-gray)] relative">
                     <Image
-                      src="/images/profile-guide.jpg" // Reemplaza con la ruta de tu imagen
+                      src="/Guia.png" // Reemplaza con la ruta de tu imagen
                       alt="Fotografía del guía"
                       fill
                       style={{ objectFit: "cover" }}

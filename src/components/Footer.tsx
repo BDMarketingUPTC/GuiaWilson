@@ -131,7 +131,7 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 py-12 md:py-16 relative z-10">
         {/* Brand Section */}
         <div className="mb-12 md:mb-10 bg-[var(--blue-dark)] flex flex-col items-center text-center">
-          <Link href="/" passHref className="group block w-fit">
+          <Link href="/" passHref className="group block">
             <div className="flex flex-col sm:flex-row sm:items-center justify-center gap-5">
               <Image
                 src="/Logo.png"

@@ -1,8 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Tus variables de color existentes */
+  --blue-primary: #0a2342;
+  --blue-dark: #071930;
+  --blue-light: #1c4b78;
+  --teal-accent: #378696;
+  --aqua-lake: #69a7b9;
+  --neutral-white: #ffffff;
+  --neutral-gray: #e4e7eb;
+  --neutral-text-secondary: #6b7280;
+  --neutral-text-primary: #1f2937;
 }
 
 @theme inline {
@@ -12,10 +20,10 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: ligth) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #171717;
   }
 }
 
@@ -23,4 +31,72 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Efecto de nieve mejorado */
+.snow-effect {
+  position: relative;
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, #e6f0ff, var(--neutral-white));
+  min-height: 100vh;
+}
+
+.snow-effect::before {
+  content: '';
+  position: fixed;
+  /* Cambiado a fixed para no interferir con el scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(4px 4px at 20px 30px, rgba(255, 255, 255, 0.7), transparent),
+    radial-gradient(3px 3px at 40px 70px, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(2px 2px at 50px 160px, rgba(255, 255, 255, 0.5), transparent),
+    radial-gradient(4px 4px at 110px 40px, rgba(255, 255, 255, 0.7), transparent),
+    radial-gradient(3px 3px at 190px 70px, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(4px 4px at 200px 120px, rgba(255, 255, 255, 0.7), transparent),
+    radial-gradient(3px 3px at 270px 100px, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(4px 4px at 290px 30px, rgba(255, 255, 255, 0.7), transparent),
+    radial-gradient(3px 3px at 330px 80px, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(2px 2px at 350px 130px, rgba(255, 255, 255, 0.5), transparent);
+  background-repeat: repeat;
+  background-size: 400px 400px;
+  animation: snowFall 15s linear infinite;
+  pointer-events: none;
+  /* Esto es crucial para que no bloquee interacciones */
+  z-index: -1;
+  /* Coloca el fondo detrás de todo el contenido */
+}
+
+@keyframes snowFall {
+  from {
+    transform: translateY(-400px);
+  }
+
+  to {
+    transform: translateY(400px);
+  }
+}
+
+/* Copos de nieve individuales */
+.snowflake {
+  position: fixed;
+  /* Cambiado a fixed */
+  top: -10px;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: fall linear infinite;
+  pointer-events: none;
+  z-index: -1;
+  /* Detrás del contenido */
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
 }

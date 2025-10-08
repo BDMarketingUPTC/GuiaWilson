@@ -67,7 +67,7 @@ const etapas: Etapa[] = [
     color: "from-[var(--cultura-sand-accent)] to-[var(--cultura-terracotta)]",
     duracion: "Primer día (Mañana) 3 Horas",
     altitud: "2,750 - 2,900 m",
-    imagen: "/planes/PLanCultural1.webp",
+    imagen: "/planes/PlanCultural1.webp",
   },
   // **ETAPA 2: El Reencuentro con la Madre Tierra**
   {
@@ -82,7 +82,7 @@ const etapas: Etapa[] = [
     color: "from-[var(--cultura-green-primary)] to-[var(--cultura-green-dark)]",
     duracion: "Primer día (Tarde) 4 Horas",
     altitud: "2,800 - 3,200 m",
-    imagen: "/planes/PLanCultural2.webp",
+    imagen: "/planes/PlanCultural2.webp",
   },
   // **ETAPA 3 a 7 (Tus etapas originales, con ID actualizado)**
   {
@@ -97,7 +97,7 @@ const etapas: Etapa[] = [
     color: "from-[var(--cultura-gray)] to-[var(--cultura-text-secondary)]",
     duracion: "Segundo Dia 2 Horas + ",
     altitud: "3,200 - 4,000 m",
-    imagen: "/planes/PLanCultural3.webp",
+    imagen: "/planes/PlanCultural3.webp",
   },
   {
     id: 4,
@@ -112,7 +112,7 @@ const etapas: Etapa[] = [
       "from-[var(--cultura-green-light)] to-[var(--cultura-green-primary)]",
     duracion: "Segundo Dia 3 Horas +",
     altitud: "3,800 - 4,200 m",
-    imagen: "/planes/PLanCultural4.webp",
+    imagen: "/planes/PlanCultural4.webp",
   },
   {
     id: 5,
@@ -126,7 +126,7 @@ const etapas: Etapa[] = [
     color: "from-[var(--cultura-terracotta)] to-[var(--cultura-sand-accent)]",
     duracion: "Segundo Dia 4 Horas+",
     altitud: "4,200 - 4,800 m",
-    imagen: "/planes/PLanCultural5.webp",
+    imagen: "/planes/PlanCultural5.webp",
   },
   {
     id: 6,
@@ -141,7 +141,7 @@ const etapas: Etapa[] = [
       "from-[var(--cultura-green-light)] to-[var(--cultura-green-primary)]",
     duracion: "Segundo Dia (Tarde) 4 Horas+",
     altitud: "4,800 - 2,800 m",
-    imagen: "/planes/PLanCultural6.webp",
+    imagen: "/planes/PlanCultural6.webp",
   },
   // **ETAPA 7: CIERRE Y RELAX EN LAS TERMAS**
   {
@@ -156,7 +156,7 @@ const etapas: Etapa[] = [
     color: "from-[var(--cultura-blue-primary)] to-[var(--cultura-teal-dark)]",
     duracion: "Tercer Día (Tarde) 3 Horas",
     altitud: "2,800 - 2,800 m",
-    imagen: "/planes/PLanCultural7.webp",
+    imagen: "/planes/PlanCultural7.webp",
   },
 ];
 

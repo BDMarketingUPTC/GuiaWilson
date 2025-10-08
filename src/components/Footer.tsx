@@ -133,14 +133,9 @@ export const Footer = () => {
         {/* Brand Section */}
         <div className="mb-12 md:mb-10 bg-[var(--blue-dark)] flex flex-col items-center text-center">
           <Link href="/" passHref className="group block">
-            {/*
-              CAMBIOS APLICADOS:
-              1. Eliminado 'justify-center' del div interno para asegurar el centrado del contenido en móvil.
-              2. Asegurado que 'items-center' y 'text-center' se mantengan en el contenedor padre (ya estaban).
-            */}
             <div className="flex flex-col sm:flex-row sm:items-center gap-5">
               <Image
-                src="/LogoAnimado.gif"
+                src="/logoAnimado.gif"
                 alt="Guía de Senderismo"
                 width={200}
                 height={160}

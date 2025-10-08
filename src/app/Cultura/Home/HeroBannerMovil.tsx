@@ -10,7 +10,7 @@ import { ModalCotizacion } from "./ModalCotizacion";
 import GuideModal from "./GuideModal";
 
 const HeroBanner = () => {
-  const backgroundImage = "/bannerCelularCultura.png";
+  const backgroundImage = "/BannerCelularCultura.webp";
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isGuideModalOpen, setIsGuideModalOpen] = useState(false);

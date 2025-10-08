@@ -86,7 +86,7 @@ const BlogSectionWithBanner: React.FC = () => {
             {/* Imagen para pantallas grandes */}
             <source
               media="(min-width: 768px)"
-              srcSet="/Banners/BlogBannerPc.jpg"
+              srcSet="/Banners/BlogBannerPC.jpg"
             />
             {/* Imagen para móviles */}
             <Image

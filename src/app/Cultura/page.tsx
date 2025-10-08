@@ -32,7 +32,7 @@ export default function Home() {
   const guideInfo = {
     name: "Willson Correa Will",
     bio: "Guía certificado con más de 20 años de experiencia en trekking y montañismo en el Nevado del Cocuy. Apasionado por la naturaleza y la seguridad de sus clientes.",
-    imageUrl: "/guia.png",
+    imageUrl: "/Guia.webp",
     experience: "20+ años",
     languages: ["Español"],
     travelersGuided: 800,

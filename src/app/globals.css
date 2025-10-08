@@ -47,7 +47,7 @@ body {
 }
 
 .background-gray {
-  background: var(--neutral-white2);
+  background: #F6F6F6 !important;
 }
 
 /* Efecto de nieve mejorado */

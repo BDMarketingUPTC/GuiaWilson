@@ -553,7 +553,7 @@ const SenderosEspiritualesPage: React.FC = () => {
                 <div className="rounded-2xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-500">
                   {/* CORRECCIÓN: Usar <Image> de Next.js en lugar de <img> */}
                   <Image // LÍNEA 552: Corrección del warning 'no-img-element'
-                    src="/guiav3.png"
+                    src="/GuiaFoto.webp"
                     alt="Guía local del Cocuy"
                     width={500} // Se añade un width/height para Image
                     height={500}

@@ -330,7 +330,7 @@ export default function FloatingWhatsApp() {
               <div className="flex items-center">
                 <div className="relative w-10 h-10 rounded-full overflow-hidden mr-3 bg-white">
                   <Image
-                    src="/Guia.png" // Reemplaza con una imagen de tu guía o logo
+                    src="/Guia.webp" // Reemplaza con una imagen de tu guía o logo
                     alt="Wilson Correa"
                     width={40}
                     height={30}

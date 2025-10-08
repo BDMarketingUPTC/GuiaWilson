@@ -133,16 +133,21 @@ export const Footer = () => {
         {/* Brand Section */}
         <div className="mb-12 md:mb-10 bg-[var(--blue-dark)] flex flex-col items-center text-center">
           <Link href="/" passHref className="group block">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-center gap-5">
+            {/*
+              CAMBIOS APLICADOS:
+              1. Eliminado 'justify-center' del div interno para asegurar el centrado del contenido en móvil.
+              2. Asegurado que 'items-center' y 'text-center' se mantengan en el contenedor padre (ya estaban).
+            */}
+            <div className="flex flex-col sm:flex-row sm:items-center gap-5">
               <Image
-                src="/Logo.webp"
+                src="/LogoAnimado.gif"
                 alt="Guía de Senderismo"
                 width={200}
                 height={160}
                 priority={false}
-                className="bg-[var(--neutral-gray)] p-2 rounded-full shadow-lg border-4 border-[var(--teal-accent)] transition-transform duration-300 hover:scale-105"
+                className="bg-[var(--neutral-gray)] p-2 rounded-full shadow-lg border-4 border-[var(--teal-accent)] transition-transform duration-300 hover:scale-105 mx-auto" // Se añade 'mx-auto' para centrar la imagen en móvil, aunque 'items-center' debería bastar en el contenedor padre.
               />
-              <p className="text-sm text-[var(--neutral-text-secondary)] max-w-xs leading-relaxed sm:leading-relaxed font-light">
+              <p className="text-sm text-[var(--neutral-text-secondary)] max-w-xs leading-relaxed sm:leading-relaxed font-light mx-auto">
                 Tu guía experto en el Nevado del Cocuy. Aventura, seguridad y
                 conocimiento en cada paso.
               </p>
@@ -193,7 +198,7 @@ export const Footer = () => {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="  hover:text-[var(--neutral-white)] transition-colors duration-200 text-lg hover:scale-110 transform"
+                  className="  hover:text-[var(--neutral-white)] transition-colors duration-200 text-lg hover:scale-110 transform"
                   aria-label={`Enlace a ${social.label}`}
                 >
                   {social.icon}

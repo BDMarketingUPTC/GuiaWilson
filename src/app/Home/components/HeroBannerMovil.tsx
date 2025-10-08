@@ -10,7 +10,7 @@ import { ModalCotizacion } from "./ModalCotizacion";
 import GuideModal from "./GuideModal";
 
 const HeroBanner = () => {
-  const backgroundImage = "/bannerCelular.png";
+  const backgroundImage = "/BannerCelular.webp";
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isGuideModalOpen, setIsGuideModalOpen] = useState(false);
@@ -18,7 +18,7 @@ const HeroBanner = () => {
   const guideInfo = {
     name: "Willson Correa Will",
     bio: "Guía certificado con más de 20 años de experiencia en trekking y montañismo en el Nevado del Cocuy. Apasionado por la naturaleza y la seguridad de sus clientes.",
-    imageUrl: "/Guia.png",
+    imageUrl: "/Guia.webp",
     experience: "20+ años",
     languages: ["Español"],
     travelersGuided: 800,

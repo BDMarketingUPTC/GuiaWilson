@@ -63,7 +63,7 @@ const RollupBannerModal: React.FC<RollupBannerModalProps> = ({
           </p>
 
           <Link
-            href="/planes/ruta-sagrada-uwa"
+            href="/Cultua/Planes"
             onClick={onClose}
             className="inline-block w-full px-6 py-3 font-semibold text-[var(--cultura-white)] rounded-xl 
                        bg-gradient-to-r from-[var(--cultura-terracotta)] to-[var(--cultura-sand-accent)] 
